@@ -5,8 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
+
+// Habilitar Enable Feign
 @EnableFeignClients
-public class LojavirtualbffApplication {
+public class  LojavirtualbffApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LojavirtualbffApplication.class, args);

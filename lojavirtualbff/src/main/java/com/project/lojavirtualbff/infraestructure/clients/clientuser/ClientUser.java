@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.*;
 public interface ClientUser {
 
     @PostMapping("/user")
-    ResponseEntity<UserResponseDTO> recordUserData(@RequestBody UserRequestDTO userResquestDTO);
+    UserResponseDTO recordUserData(@RequestBody UserRequestDTO userResquestDTO);
 
     @GetMapping("/user")
-    ResponseEntity<UserResponseDTO> findUserByEmail(@RequestParam ("email") String email);
+    UserResponseDTO findUserByEmail(@RequestParam ("email") String email);
 
     @DeleteMapping("/user")
-    ResponseEntity<Void> deleteUserData(@RequestParam ("email") String email);
+    Void deleteUserData(@RequestParam ("email") String email);
 
 }
